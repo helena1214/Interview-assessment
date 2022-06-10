@@ -27,11 +27,11 @@
 <body>
     <div class="polygon" style="clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);"></div>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark" height="48px">
+        <nav class="navbar navbar-expand-md justify-content-between navbar-dark" height="48px">
             <a class="navbar-brand" href="#">
                 <img src="../image/odoo-white.svg" width="auto" height="24px">
             </a>
-            <div class="nav-bar" style="margin:0 auto;">
+            
                 <div class="navbar-nav">
                     <a class="nav-link">Home</a>
                     <a class="nav-link">Products</a>
@@ -39,85 +39,93 @@
                     <a class="nav-link">App</a>
                     <a class="nav-link">Docs</a>
                 </div>
-            </div>
+            
             <div class="navbar-nav">
-                <a class="nav-link">Sign in</a>
-                <button type="button" class="btn btn-light btn-sm">
+                <a class="nav-link ml-3">Sign in</a>
+                <button type="button" class="btn btn-light btn-sm ml-3">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ri" width="1rem" height="1rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M6.5 2h11a1 1 0 0 1 .8.4L21 6v15a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6l2.7-3.6a1 1 0 0 1 .8-.4zM19 8H5v12h14V8zm-.5-2L17 4H7L5.5 6h13zM9 10v2a3 3 0 0 0 6 0v-2h2v2a5 5 0 0 1-10 0v-2h2z"></path></svg>
                     Buy Now
                 </button>
             </div>
             </nav>
 
-            <div class="row" id="heroSection">
-                <div class="col col-7">
-                    <h1><b>Development<br> done right</b></h1>
-                    <p>Build a beautiful, modern website with flexible components built from scratch.</p>
-                    <button type="button" class="btn btn-light btn-sm">
-                        Get started
-                        <i class="bi bi-plus"></i>
-                    </button>
-                    <br>
-                    <div class="companyFlex">
-                        <small>Trusted by:</small>
-                        <img src="../image/google-white.svg">
-                        <img src="../image/spotify-white.svg">
-                        <img src="../image/airbnb-white.svg">
-                        <img src="../image/paypal-white.svg">
+            <section class="row mt-5" id="heroSection">
+                <div class="col col-7 justify-content-center d-flex flex-column">
+                    <div class="slogan w-50">
+                        <h1 class="text-white">
+                            <b>Development<br> done right</b>
+                        </h1>
+                        <p  class="text-white">Build a beautiful, modern website with flexible components built from scratch.</p>
+                        <button type="button" class="btn btn-light btn-lg">
+                            Get started
+                            <i class="bi bi-plus"></i>
+                        </button>
+                    </div>       
+                    <div class="companyFlex d-flex justify-content-between w-75 mt-5">
+                            <small class="text-white mr-3">Trusted by:</small>
+                            <img src="../image/google-white.svg">
+                            <img src="../image/spotify-white.svg">
+                            <img src="../image/airbnb-white.svg">
+                            <img src="../image/paypal-white.svg">
                     </div>
                 </div>
                 <div class="col col-5">
-                    <div class="heroImage">
-                        <div>
+                    <div class="heroImage container p-3">
+                        <div class="head d-flex align-items-center justify-content-between">
                             <h5>Manage Cards</h5>
-                            <button type="button" class="btn btn-outline-secondary" id="addNewBtn">Add new</button>
-                            <div class="creditCard">
-                                <img src="../image/mastercard.svg" height="24px">
-                                <span class="badge badge-success">Active</span>
-                                <div class="creditCardItems">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" id="addNewBtn">Add new</button>
+                        </div>
+                            <br>
+                            <div class="creditCard p-4">
+                                <img src="../image/mastercard.svg" height="24px" class="m-1">
+                                <span class="badge badge-success float-right m-1">Active</span>
+                                <div class="creditCardItems m-1">
                                     <span class="creditCardKey">CARD NUMBER</span>
                                     <br>
-                                    <span>4358 - 7421 - 9256 - 6682</span>
+                                    <span id="creditCardNo" class="w-100 large">4358 - 7421 - 9256 - 6682</span>
                                 </div>
-                                <div class="creditCardItems">
-                                    <span class="creditCardKey">NAME</span>
-                                    <br>
-                                    <span>John Snow</span>
+                                <div class="row">
+                                     <div class="creditCardItems col m-1">
+                                        <span class="creditCardKey">NAME</span>
+                                        <br>
+                                        <span>John Snow</span>
+                                    </div>
+                                    <div class="creditCardItems col m-1">
+                                        <span class="creditCardKey">EXPIRY DATE</span>
+                                        <br>
+                                        <span>11/23</span>
+                                    </div>
                                 </div>
-                                <div class="creditCardItems">
-                                    <span class="creditCardKey">EXPIRY DATE</span>
-                                    <br>
-                                    <span>11/23</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="card-body">
+                               
+                        
+                        <div class="card-body pb-0 px-0">
                             <b>Starbucks</b>
-                            <span class="card-price">$5,50 USD</span>
+                            <span class="card-price"><b>$5,50 USD</b></span>
                             <p>Pending - San Francisco, United States</p>
                             <hr>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body p-0 px-0">
                             <b>Starbucks</b>
-                            <span class="card-price">$5,50 USD</span>
+                            <span class="card-price"><b>$5,50 USD</b></span>
                             <p>Pending - San Francisco, United States</p>
                             <hr>
                         </div>
-                        <p>View all ></p>                     
+                        <p id="viewAll" class="text-primary">View all ></p>                     
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="row">
-                <div class="col col-6">
-                    <div class="videoImage">
+            <section class="row mt-5">
+                <div class="col col-6 row toolsImage d-flex flex-column justify-content-between">
+                    <div class="videoImage col">
                         <button type="button" class="btn btn-light btn-sm">
                             Play video 
                             <i class="bi bi-play"></i>
                         </button>
                         <img src="../image/img_01.jpg">
                     </div>
-                    <div class="boarderBox">
+                    <div class="boarderBox align-bottom col">
                         <h5>Awesome projects</h5>
                         <div class="progressBox">
                             <b>Create the new logo</b>
@@ -140,15 +148,15 @@
                                 <div class="progress-bar badge-success" role="progressbar" width="50%" ></div>
                             </div>
                         </div>
-                        
                     </div>
+                    
                 </div>
                 <div class="col col-6">
                     <span class="badge badge-pill badge-warning">Tools</span>
                     <h3>We build for designers and developers</h3>
                     <p>Get components and examples, including tons of variables that will help you grow your business.</p>
                 </div>
-            </div>
+            </section>
 
             <div class="row">
                 <div class="col col-6">
