@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odoo</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -15,7 +16,6 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Odoo</title>
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
 <body>
     <div class="polygon" style="clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);"></div>
     <div class="container">
-        <nav class="navbar navbar-expand-md justify-content-between navbar-dark" height="48px">
+        <nav class="navbar navbar-expand-md justify-content-between" height="48px">
             <a class="navbar-brand" href="#">
                 <img src="../image/odoo-white.svg" width="auto" height="24px">
             </a>
@@ -72,7 +72,7 @@
                 <div class="col col-5">
                     <div class="heroImage container p-3">
                         <div class="head d-flex align-items-center justify-content-between">
-                            <h5>Manage Cards</h5>
+                            <b>Manage Cards</b>
                             <button type="button" class="btn btn-outline-secondary btn-sm" id="addNewBtn">Add new</button>
                         </div>
                             <br>
@@ -117,192 +117,390 @@
             </section>
 
             <section class="row mt-5">
-                <div class="col col-6 row toolsImage d-flex flex-column justify-content-between">
-                    <div class="videoImage col">
-                        <button type="button" class="btn btn-light btn-sm">
-                            Play video 
-                            <i class="bi bi-play"></i>
-                        </button>
-                        <img src="../image/img_01.jpg">
-                    </div>
-                    <div class="boarderBox align-bottom col">
-                        <h5>Awesome projects</h5>
-                        <div class="progressBox">
-                            <b>Create the new logo</b>
-                            <span>3:50</span>
-                            <div class="progress" style="height:2px;">
-                                <div class="progress-bar badge-success" role="progressbar" width="50%" ></div>
-                            </div>
-                        </div>
-                        <div class="progressBox">
-                            <b>Create the new logo</b>
-                            <span>3:50</span>
-                            <div class="progress" style="height:2px;">
-                                <div class="progress-bar badge-success" role="progressbar" width="50%" ></div>
-                            </div>
-                        </div>
-                        <div class="progressBox">
-                            <b>Create the new logo</b>
-                            <span>3:50</span>
-                            <div class="progress" style="height:2px;">
-                                <div class="progress-bar badge-success" role="progressbar" width="50%" ></div>
-                            </div>
+                <div class="col toolsImage py-5">
+                     <div class="card toolsVideo rounded-lg shadow">
+                        <img class="card-img" src="../image/img_01.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                            <button type="button" class="btn btn-light btn-sm float-right">
+                                Play video 
+                                <i class="bi bi-play"></i>
+                            </button>
                         </div>
                     </div>
                     
+                    <div class="card px-4 py-3 w-100 toolsProject shadow-sm">
+                        <h5 class="mx-2">Awesome projects</h5>
+                        <div class="progressBox mx-2 my-3">
+                            <span><b>Create the new logo</b></span>
+                            <span class="float-right">3:50 
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="16" height="16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"></path></svg></span>
+                            <div class="progress my-1" style="height:2px;">
+                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="3.5" aria-valuemin="0" aria-valuemax="7" style="width:50% ;" ></div>
+                            </div>
+                        </div>
+                        <div class="progressBox mx-2 my-3">
+                            <b>Set up the color palette</b>
+                            <span class="float-right">4:00 
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="16" height="16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"></path></svg></span>
+                            <div class="progress my-1" style="height:2px;">
+                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="7" style="width:56% ;" ></div>
+                            </div>
+                        </div>
+                        <div class="progressBox mx-2 my-3">
+                            <b>Wireframe and prototype</b>
+                            <span class="float-right">6:50 
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="16" height="16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M9.29 6.71a.996.996 0 0 0 0 1.41L13.17 12l-3.88 3.88a.996.996 0 1 0 1.41 1.41l4.59-4.59a.996.996 0 0 0 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01z"></path></svg></span>
+                            <div class="progress my-1" style="height:2px;">
+                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="3.5" aria-valuemin="0" aria-valuemax="7" style="width:90% ;" ></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col col-6">
+
+                <div class="col justify-content-center d-flex flex-column">
                     <span class="badge badge-pill badge-warning">Tools</span>
-                    <h3>We build for designers and developers</h3>
+                    <h3 class="my-4">We build for designers and developers</h3>
                     <p>Get components and examples, including tons of variables that will help you grow your business.</p>
                 </div>
             </section>
 
-            <div class="row">
-                <div class="col col-6">
+            <section class="row">
+                <div class="col justify-content-center d-flex flex-column">
                     <span class="badge badge-pill badge-success">Features</span>
-                    <h4>Get components and examples, including tons of variables that will help you grow your business.</h4>
-                    <i class="bi bi-check-square-fill text-success"></i><span class="text-success">Perfect for modern startups</span>
-                    <br>
-                    <i class="bi bi-check-square-fill text-success"></i><span class="text-success">Fully customizable and scalable</span>
+                    <h5 class="my-4">Get components and examples, including tons of variables that will help you grow your business.</h5>
+                    <span class="text-success  mb-2"><i class="bi bi-check-square-fill text-success mr-2 mb-5"></i>Perfect for modern startups</span>
+                    <span class="text-success"><i class="bi bi-check-square-fill text-success mr-2"></i>Fully customizable and scalable</span>
                 </div>
-                <div class="col col-6">
-                    <div class="videoImage clearfix">
-                        <button type="button" class="btn btn-light btn-sm">
-                            Play video 
-                            <i class="bi bi-play"></i>
-                        </button>
-                        <img src="../image/img_02.jpg">
+                <div class="col">
+                    <div class="card rounded-lg shadow">
+                        <img class="card-img" src="../image/img_02.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                            <button type="button" class="btn btn-light btn-sm">
+                                Play video 
+                                <i class="bi bi-play"></i>
+                            </button>
+                        </div>
+                </div>
+            </section>
+    
+            <section class="row my-5">
+                <div class="col row col-6 technologyColumn">
+                    <div class="row">
+                        <div class="col d-flex flex-column align-items-center px-2">
+                            <div class="card shadow my-3">
+                                <img src="../image/person_03.jpg" class="card-img-top">
+                                <div class="media card-body align-items-center">
+                                    <div class="rounded-circle bg-warning roundBtn align-middle" style="width: 36px; height: 36px;">JH</div>
+                                    <div class="media-body">
+                                        <span class="ml-3"><b>Jimmy Hendrix</b></span>
+                                        <i class="bi bi-heart float-right"></i>  
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card shadow">
+                                <div class="media card-body">
+                                    <div class="rounded-circle bg-success roundBtn align-middle" style="width: 36px; height: 36px;">
+                                        <i class="bi bi-check-lg"></i>
+                                    </div>
+                                    <div class="media-body ml-3">
+                                        <p class="card-title m-0"><b>300+ components</b></p>
+                                        <p class="card-text">Built to be customized.</p>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col d-flex flex-column align-items-center px-2">
+                            <div class="card shadow text-center px-3 py-5 d-flex flex-column align-items-center">
+                                <img src="../image/airbnb.svg" class="cardIcon">
+                                <div class="d-flex justify-content-around starRank my-3">
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <h5 class="card-title"><b>4.95 out of 5 stars</b></h5>
+                                <p class="card-text">from 23 reviews</p>
+                            </div>
+
+                            <div class="card shadow text-center px-3 py-2 mt-3">
+                                <div class="techUIcontainer d-flex flex-column align-items-center justify-content-center py-3">
+                                    <div class="rounded-circle bg-dark roundBtn align-middle" style="width: 48px; height: 48px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ion" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="48" d="M256 256s-48-96-126-96c-54.12 0-98 43-98 96s43.88 96 98 96c30 0 56.45-13.18 78-32m48-64s48 96 126 96c54.12 0 98-43 98-96s-43.88-96-98-96c-29.37 0-56.66 13.75-78 32"></path></svg>
+                                    </div>
+                                    <div class="card-title"><b>Website UI Kit</b></div>
+                                    <div class="techUIimg ml-3">
+                                        <img class="rounded-circle" src="../image/person_01.jpg">
+                                        <img class="rounded-circle" src="../image/person_02.jpg">
+                                        <img class="rounded-circle" src="../image/person_03.jpg">
+                                    </div>
+                                    <div class="techUItool d-flex justify-content-around">
+                                        <i class="bi bi-paperclip"></i>
+                                        <i class="bi bi-eye"></i>
+                                        <i class="bi bi-heart"></i> 
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="col col-6"></div>
-                <div class="col col-6">
+                <div class="col col-6 justify-content-center d-flex flex-column pl-5">
                     <span class="badge badge-pill badge-primary">Technology</span>
-                    <h4>We use the latest technologies on the market</h4>
+                    <h4 class="my-4">We use the latest technologies on the market</h4>
                     <p>Get components and examples, including tons of variables that will help you grow your business.</p>
-                    <span class="text-primary">See case srudies</span>    
+                    <span class="text-primary" id="techLink">See case studies</span>
                 </div>
-            </div>
+            </section>
 
-            <div class="row">
+            <section class="row">
                 <div class="col col-6">
-                    <span class="badge badge-pill badge-warning">Easy to instal</span>
-                    <h4>Download, install and run.</h4>
+                    <span class="badge badge-pill badge-warning">Easy to install</span>
+                    <h4 class="my-4">Download, install and run.</h4>
                     <p>Get components and examples, including tons of variables that will help you grow your business.</p>
-                    <div class="downloadIcons">
-                        <i class="bi bi-apple"></i>
-                        Download on the
-                        <span class="appStoreName">App Store</span>
-                    </div>
-                    <div class="downloadIcons">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--arcticons" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path fill="none" stroke-width="4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M9.3 5.52a7 7 0 0 1 2 .76L32.52 18l-5.87 6L7.68 5.9a2.46 2.46 0 0 1 1.62-.38Zm-1.62.38l19 18.1L7.7 42.07c-.7-.56-1.07-1.69-1.07-3.36V9.29c0-1.67.36-2.82 1-3.38ZM32.52 18l7 3.87c2.49 1.38 2.49 2.84 0 4.22l-7 3.87l-5.87-6l5.87-6Zm0 12L11.34 41.72c-1.16.64-2.72 1.19-3.64.35L26.65 24Z"></path></svg>
-                        Download on the
-                        <span class="appStoreName">Play Store</span>
-                    </div>
-                </div>
-                <div class="col col-6">
-                    <div class="videoImage clearfix">
-                        <button type="button" class="btn btn-light btn-sm">
-                            Play video 
-                            <i class="bi bi-play"></i>
-                        </button>
-                        <img src="../image/img_03.jpg">
-                    </div>  
-                </div>
-            </div>
+                    
+                    <div class="d-flex mt-5">
+                        <div class="downloadIcons text-white media px-4 py-2 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-apple mr-2" viewBox="0 0 16 16">
+                                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+                                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z"/>
+                            </svg>
+                            <span class="appStore media-body">
+                                Download on the
+                                <div class="appStoreName text-white">App Store</div>
+                            </span>
+                        </div>
 
-            <div class="row">
+                        <div class="downloadIcons text-white media px-4 py-2 rounded-lg ml-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--arcticons mr-2" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><path fill="none" stroke-width="4" stroke="white" stroke-linecap="round" stroke-linejoin="round" d="M9.3 5.52a7 7 0 0 1 2 .76L32.52 18l-5.87 6L7.68 5.9a2.46 2.46 0 0 1 1.62-.38Zm-1.62.38l19 18.1L7.7 42.07c-.7-.56-1.07-1.69-1.07-3.36V9.29c0-1.67.36-2.82 1-3.38ZM32.52 18l7 3.87c2.49 1.38 2.49 2.84 0 4.22l-7 3.87l-5.87-6l5.87-6Zm0 12L11.34 41.72c-1.16.64-2.72 1.19-3.64.35L26.65 24Z"></path></svg>
+                            <span class="appStore media-body">
+                                Download on the
+                                <div class="appStoreName text-white">Play Store</div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="col col-6">
+                    <div class="card rounded-lg shadow">
+                        <img class="card-img" src="../image/img_03.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                            <button type="button" class="btn btn-light btn-sm">
+                                Play video 
+                                <i class="bi bi-play"></i>
+                            </button>
+                        </div>  
+                </div>
+            </section>
+
+            <section class="row solutions text-white p-5 my-5">
                 <div class="col col-9">
-                    <h4>Infinite solutions</h4>
+                    <h5>Infinite solutions</h5>
                         <p>
                         Intuitive markup, powerful and lightning-fast build tools,<br>
                         everything you need to turn your ideas into incredible products.
                         </p>
                 </div>
                 <div class="col col-3">
-                    <button type="button" class="btn btn-light btn-large">
+                    <button type="button" class="btn btn-light btn-lg px-4">
                         Learn more
                         <i class="bi bi-arrow-right-short"></i>
                     </button>
                 </div>
-            </div>
-            <section>
-                <span class="badge badge-pill badge-primary">Awards</span>
-                <h5>Awards for design, creativity, and innovation on the Internet</h5>
-                    <div class="row">
-                        <div class="col">1</div>
-                        <div class="col">2</div>
-                        <div class="col">3</div>
-                        <div class="col">4</div>
-                        <div class="col">5</div>
-                    </div>
             </section>
-            <section>
+    </div>
+            <section class="py-5" id="Awards">
+                <div class="container">
+                    <span class="badge badge-pill badge-primary">Awards</span>
+                    <div class="my-3"><b>Awards for design, creativity, and innovation on the Internet</b></div>
+                        <div class="card-deck my-5">
+                            <div class="card shadow-sm text-center px-4 py-5 align-self-end">
+                                <img src="../image/airbnb.svg">
+                                <div class="d-flex justify-content-around starRank my-3">
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <p class="card-title"><b>4.95 out of 5 stars</b></p>
+                                <p class="card-text">from 23 reviews</p>
+                            </div>
+
+                            <div class="card shadow-sm text-center px-4 py-5 d-flex align-items-center">
+                                <img src="../image/amazon.svg">
+                                <p class="card-text my-3">
+                                    They build modern-looking websites easily using Tabs.
+                                </p>
+                                <div class="learnMore">Learn more</div>
+                            </div>
+
+                            <div class="card shadow-sm text-center px-4 py-5 align-self-end d-flex align-items-center">
+                                <img src="../image/slack.svg">
+                                <p class="card-text my-3">
+                                    They build modern-looking websites easily using Trello.
+                                </p>
+                                <div class="learnMore">Learn more</div>
+                            </div>
+
+                            <div class="card shadow-sm text-center px-4 py-5 ">
+                                <img src="../image/spotify.svg">
+                                <div class="d-flex justify-content-around starRank my-3">
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                    <i class="bi bi-star"></i>
+                                </div>
+                                <p class="card-title"><b>4.95 out of 5 stars</b></p>
+                                <p class="card-text">from 23 reviews</p>
+                            </div>
+
+                            <div class="card shadow-sm text-center px-4 py-5 align-self-end d-flex align-items-center">
+                                <img src="../image/paypal.svg">
+                                <p class="card-text my-3">
+                                    They build modern-looking websites easily using Docker.
+                                </p>
+                                <div class="learnMore">Learn more</div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+    <div class="container">
+            <section class="text-center my-5">
                 <h3>Helpful answers</h3>
                 <p>Start building fast, beautiful, and modern-looking websites in no time.</p>
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-expanded="false">
-                            Right-aligned but left aligned when large screen
-                        </button>
+                <div class="row my-5">
+                    <div class="col accordion" id="helpfulAnswer">
+                        <div class="card-header" id="qus1">
+                              <button class="btn text-dark btn-block text-left" type="button" data-toggle="collapse" data-target="#ans1" aria-expanded="true" aria-controls="qus1">
+                                <i class="bi bi-file-earmark mr-3"></i>
+                                Which license do I need?
+                                <i class="bi bi-plus float-right"></i>
+                              </button>
+                          </div>
+                                <div id="ans1" class="collapse" aria-labelledby="qus1" data-parent="#helpfulAnswer">
+                                    <div class="card-body">
+                                        Which license do I need?
+                                    </div>
+                                </div>
                     </div>
                     <div class="col">
-                        
+                        <div class="card-header" id="qus2">
+                            <button class="btn text-dark btn-block text-left" type="button" data-toggle="collapse" data-target="#ans2" aria-expanded="true" aria-controls="qus2">
+                              <i class="bi bi-file-earmark mr-3"></i>
+                              Which license do I need?
+                              <i class="bi bi-plus float-right"></i>
+                            </button>
+                        </div>
+                              <div id="ans2" class="collapse" aria-labelledby="qus2" data-parent="#helpfulAnswer">
+                                  <div class="card-body">
+                                    Which license do I need?
+                                  </div>
+                              </div>
                     </div>
                         <div class="w-100"></div>
                     <div class="col">
-                        
+                        <div class="card-header" id="qus3">
+                            <button class="btn text-dark btn-block text-left" type="button" data-toggle="collapse" data-target="#ans3" aria-expanded="true" aria-controls="qus3">
+                              <i class="bi bi-lock mr-3"></i>
+                              How do I get access to my database?
+                              <i class="bi bi-plus float-right"></i>
+                            </button>
+                        </div>
+                              <div id="ans3" class="collapse" aria-labelledby="qus3" data-parent="#helpfulAnswer">
+                                  <div class="card-body">
+                                    How do I get access to my database?
+                                  </div>
+                              </div>
                     </div>
                     <div class="col">
-                        
+                        <div class="card-header" id="qus4">
+                            <button class="btn text-dark btn-block text-left" type="button" data-toggle="collapse" data-target="#ans4" aria-expanded="true" aria-controls="qus4">
+                              <i class="bi bi-lock mr-3"></i>
+                              How do I get access to my database?
+                              <i class="bi bi-plus float-right"></i>
+                            </button>
+                        </div>
+                              <div id="ans4" class="collapse" aria-labelledby="qus4" data-parent="#helpfulAnswer">
+                                  <div class="card-body">
+                                    How do I get access to my database?
+                                  </div>
+                              </div>
                     </div>
                         <div class="w-100"></div>
                     <div class="col">
-                        
+                        <div class="card-header" id="qus5">
+                            <button class="btn text-dark btn-block text-left" type="button" data-toggle="collapse" data-target="#ans5" aria-expanded="true" aria-controls="qus5">
+                              <i class="bi bi-folder mr-3"></i>
+                              How do I see previous orders?
+                              <i class="bi bi-plus float-right"></i>
+                            </button>
+                        </div>
+                              <div id="ans5" class="collapse" aria-labelledby="qus5" data-parent="#helpfulAnswer">
+                                  <div class="card-body">
+                                    How do I see previous orders?
+                                  </div>
+                              </div>
                     </div>
                     <div class="col">
-                        
+                        <div class="card-header" id="qus6">
+                            <button class="btn text-dark btn-block text-left" type="button" data-toggle="collapse" data-target="#ans6" aria-expanded="true" aria-controls="qus6">
+                              <i class="bi bi-folder mr-3"></i>
+                              How do I see previous orders?
+                              <i class="bi bi-plus float-right"></i>
+                            </button>
+                        </div>
+                              <div id="ans6" class="collapse" aria-labelledby="qus6" data-parent="#helpfulAnswer">
+                                  <div class="card-body">
+                                    How do I see previous orders?
+                                  </div>
+                              </div>
                     </div>
                 </div>
             </section>
-            <section>
-                <h5>I want to start a new project</h5>
-                <button type="button" class="btn btn-primary btn-large">
+
+            <section class="text-center my-5">
+                <h5>I want to start a new project.</h5>
+                <button type="button" class="btn btn-primary btn-lg my-3">
                     Buy now
                     <i class="bi bi-arrow-right-short"></i>
                 </button>
-                <button type="button" class="btn btn-light btn-large">
+                <button type="button" class="btn btn-light btn-lg my-3">
                     Learn more
                 </button>
             </section>
 
-            <footer>
-                
-                <div class="row">
-                    <div class="col col-8">
-                        <h3>Brilliant solutions for your ideas</h3>
-                    <p>Modern-looking websites.</p>
-                    </div>
-                    <div class="col col-2">
-                        <button type="button" class="btn btn-light">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--lucide" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></g></svg>
-                            Documentaiton
-                        </button>
-                    </div>
-                    <div class="col col-2">
-                        <button type="button" class="btn btn-primary">
-                            Purchase now
-                        </button>
-                    </div>
+    </div>
+        
+            <footer class="footerpolygon">
+                <div class="container pt-5">
+                   <div class="row my-5">
+                        <div class="col col-8">
+                            <h5 class="text-white">Brilliant solutions for your ideas</h5>
+                            <p class="text-white-50">Modern-looking websites.</p>
+                        </div>
+                        <div class="col col-2 px-0">
+                            <button type="button" class="btn btn-light btn-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ri" width="16" height="16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18.5V5a3 3 0 0 1 3-3h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 18.5zM19 20v-3H6.5a1.5 1.5 0 0 0 0 3H19zM5 15.337A3.486 3.486 0 0 1 6.5 15H19V4H6a1 1 0 0 0-1 1v10.337z"></path></svg>
+                                <span class="d-inline">Documentaiton</span>
+                            </button>
+                        </div>
+                        <div class="col col-2">
+                            <button type="button" class="btn btn-primary btn-lg">
+                                Purchase now
+                            </button>
+                        </div>
                 </div>
+                <hr class="bg-dark mb-5">
                 <div class="row">
                     <div class="col col-4">
-                        <img src="../image/odoo-white.svg" width="auto" height="24px">
-                        <p>Odoo attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.</p>
-                        <div class="companyFlex">
+                        <img src="../image/odoo-white.svg" width="auto" height="24px" class="mb-3">
+                        <p class="text-white-50">Odoo attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.</p>
+                        <div class="companyFlex d-flex">
                             <i class="bi bi-dribbble"></i>
                             <i class="bi bi-github"></i>
                             <i class="bi bi-instagram"></i>
@@ -312,36 +510,40 @@
                     <div class="col col-2">
 
                     </div>
-                    <div class="col col-2 d-flex flex-column">
-                        <div class="footerSubMenu">Account</div>
-                        <div>Profile</div>
+                    <div class="col col-2 d-flex flex-column footerItems">
+                        <div class="text-white mb-3">Account</div>
+                        <div >Profile</div>
                         <div>Settings</div>
                         <div>Billing</div>
                         <div>Notifications</div>
                     </div>
-                    <div class="col col-2 d-flex flex-column">
-                        <div class="footerSubMenu">About</div>
+                    <div class="col col-2 d-flex flex-column footerItems">
+                        <div class="text-white mb-3">About</div>
                         <div>Services</div>
                         <div>Pricing</div>
                         <div>Contact</div>
                         <div>Careers</div>
                      </div>  
-                    <div class="col col-2">
-                        <div class="footerSubMenu">Company</div>
+                    <div class="col col-2 d-flex flex-column footerItems">
+                        <div class="text-white mb-3">Company</div>
                         <div>Community</div>
                         <div>Help center</div>
                         <div>Support</div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col col-9"><b>© Odoo. </b>All rights reserved</div>
-                    <div class="col col-1">Terms</div>
-                    <div class="col col-1">Privacy</div>
-                    <div class="col col-1">Cookies</div>
+                <hr class="bg-dark mb-3 w-50">
+                <div class="row my-4">
+                    <div class="col col-9 text-white-50"><b>© Odoo. </b>All rights reserved</div>
+                    <div class="col col-1 text-white-50">Terms</div>
+                    <div class="col col-1 text-white-50">Privacy</div>
+                    <div class="col col-1 text-white-50">Cookies</div>
                 </div>
+            </div> 
+        </div>
+                
             </footer>
            
-    </div>
-    <div class="polygon" style="clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);"></div>
+    
+    
 </body>
 </html>
