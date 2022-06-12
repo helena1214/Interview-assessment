@@ -19,13 +19,13 @@
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 
 </head>
 <body>
-    <div class="polygon" style="clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);"></div>
+    <div class="polygon"></div>
     <div class="container">
         <nav class="navbar navbar-expand-md justify-content-between" height="48px">
             <a class="navbar-brand" href="#">
@@ -52,17 +52,17 @@
             <section class="row mt-5" id="heroSection">
                 <div class="col col-7 justify-content-center d-flex flex-column">
                     <div class="slogan w-50">
-                        <h1 class="text-white">
-                            <b>Development<br> done right</b>
+                        <h1 class="text-white my-3">
+                            Development<br> done right
                         </h1>
-                        <p  class="text-white">Build a beautiful, modern website with flexible components built from scratch.</p>
-                        <button type="button" class="btn btn-light btn-lg">
+                        <p class="text-white">Build a beautiful, modern website with flexible components built from scratch.</p>
+                        <button type="button" class="btn btn-light btn-lg my-3">
                             Get started
                             <i class="bi bi-plus"></i>
                         </button>
                     </div>       
                     <div class="companyFlex d-flex justify-content-between w-75 mt-5">
-                            <small class="text-white mr-3">Trusted by:</small>
+                            <small class="text-white">Trusted by:</small>
                             <img src="../image/google-white.svg">
                             <img src="../image/spotify-white.svg">
                             <img src="../image/airbnb-white.svg">
@@ -73,25 +73,25 @@
                     <div class="heroImage container p-3">
                         <div class="head d-flex align-items-center justify-content-between">
                             <b>Manage Cards</b>
-                            <button type="button" class="btn btn-outline-secondary btn-sm" id="addNewBtn">Add new</button>
+                            <button type="button" class="btn btn-outline-secondary btn-sm float-right px-3" id="addNew">Add new</button>
                         </div>
                             <br>
                             <div class="creditCard p-4">
                                 <img src="../image/mastercard.svg" height="24px" class="m-1">
-                                <span class="badge badge-success float-right m-1">Active</span>
+                                <span class="badge badge-success float-right m-1 p-2">Active</span>
                                 <div class="creditCardItems m-1">
-                                    <span class="creditCardKey">CARD NUMBER</span>
+                                    <span class="creditCardKey small">CARD NUMBER</span>
                                     <br>
                                     <span id="creditCardNo" class="w-100 large">4358 - 7421 - 9256 - 6682</span>
                                 </div>
                                 <div class="row">
                                      <div class="creditCardItems col m-1">
-                                        <span class="creditCardKey">NAME</span>
+                                        <span class="creditCardKey small">NAME</span>
                                         <br>
                                         <span>John Snow</span>
                                     </div>
                                     <div class="creditCardItems col m-1">
-                                        <span class="creditCardKey">EXPIRY DATE</span>
+                                        <span class="creditCardKey small">EXPIRY DATE</span>
                                         <br>
                                         <span>11/23</span>
                                     </div>
@@ -117,7 +117,7 @@
             </section>
 
             <section class="row mt-5">
-                <div class="col toolsImage py-5">
+                <div class="col toolsImage pt-5">
                      <div class="card toolsVideo rounded-lg shadow">
                         <img class="card-img" src="../image/img_01.jpg" alt="Card image">
                         <div class="card-img-overlay">
@@ -164,6 +164,8 @@
                 </div>
             </section>
 
+            <div class="curvedLine" style="border-bottom-left-radius: 100%; border-style: none none dashed dashed;"></div>
+
             <section class="row">
                 <div class="col justify-content-center d-flex flex-column">
                     <span class="badge badge-pill badge-success">Features</span>
@@ -182,8 +184,10 @@
                         </div>
                 </div>
             </section>
+
+            <div class="curvedLine" style="border-bottom-right-radius: 100%; border-style: none dashed dashed none;"></div>
     
-            <section class="row my-5">
+            <section class="row">
                 <div class="col row col-6 technologyColumn">
                     <div class="row">
                         <div class="col d-flex flex-column align-items-center px-2">
@@ -204,7 +208,7 @@
                                         <i class="bi bi-check-lg"></i>
                                     </div>
                                     <div class="media-body ml-3">
-                                        <p class="card-title m-0"><b>300+ components</b></p>
+                                        <h5 class="card-title m-0"><b>300+ components</b></h5>
                                         <p class="card-text">Built to be customized.</p>
                                     </div>   
                                 </div>
@@ -228,14 +232,15 @@
                             <div class="card shadow text-center px-3 py-2 mt-3">
                                 <div class="techUIcontainer d-flex flex-column align-items-center justify-content-center py-3">
                                     <div class="rounded-circle bg-dark roundBtn align-middle" style="width: 48px; height: 48px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ion" width="24" height="24" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="48" d="M256 256s-48-96-126-96c-54.12 0-98 43-98 96s43.88 96 98 96c30 0 56.45-13.18 78-32m48-64s48 96 126 96c54.12 0 98-43 98-96s-43.88-96-98-96c-29.37 0-56.66 13.75-78 32"></path></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ion shadow" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="48" d="M256 256s-48-96-126-96c-54.12 0-98 43-98 96s43.88 96 98 96c30 0 56.45-13.18 78-32m48-64s48 96 126 96c54.12 0 98-43 98-96s-43.88-96-98-96c-29.37 0-56.66 13.75-78 32"></path></svg>
                                     </div>
-                                    <div class="card-title"><b>Website UI Kit</b></div>
-                                    <div class="techUIimg ml-3">
+                                    <div class="card-title mt-3"><b>Website UI Kit</b></div>
+                                    <div class="techUIimg ml-3 my-3">
                                         <img class="rounded-circle" src="../image/person_01.jpg">
                                         <img class="rounded-circle" src="../image/person_02.jpg">
                                         <img class="rounded-circle" src="../image/person_03.jpg">
                                     </div>
+                                    
                                     <div class="techUItool d-flex justify-content-around">
                                         <i class="bi bi-paperclip"></i>
                                         <i class="bi bi-eye"></i>
@@ -254,6 +259,8 @@
                     <span class="text-primary" id="techLink">See case studies</span>
                 </div>
             </section>
+
+            <div class="curvedLine" style="border-bottom-left-radius: 100%; border-style: none none dashed dashed;"></div>   
 
             <section class="row">
                 <div class="col col-6">
@@ -295,7 +302,9 @@
                 </div>
             </section>
 
-            <section class="row solutions text-white p-5 my-5">
+            <div class="curvedLine" style="border-bottom-right-radius: 100%; border-style: none dashed dashed none;"></div>
+
+            <section class="row solutions text-white p-5">
                 <div class="col col-9">
                     <h5>Infinite solutions</h5>
                         <p>
@@ -325,7 +334,7 @@
                                     <i class="bi bi-star text-warning"></i>
                                     <i class="bi bi-star"></i>
                                 </div>
-                                <p class="card-title"><b>4.95 out of 5 stars</b></p>
+                                <h5 class="card-title">4.95 out of 5 stars</h5>
                                 <p class="card-text">from 23 reviews</p>
                             </div>
 
@@ -354,7 +363,7 @@
                                     <i class="bi bi-star text-warning"></i>
                                     <i class="bi bi-star"></i>
                                 </div>
-                                <p class="card-title"><b>4.95 out of 5 stars</b></p>
+                                <h5 class="card-title">4.95 out of 5 stars</h5>
                                 <p class="card-text">from 23 reviews</p>
                             </div>
 
@@ -464,7 +473,8 @@
             </section>
 
             <section class="text-center my-5">
-                <h5>I want to start a new project.</h5>
+                <b>I want to start a new project.</b>
+                    <br>
                 <button type="button" class="btn btn-primary btn-lg my-3">
                     Buy now
                     <i class="bi bi-arrow-right-short"></i>
@@ -485,8 +495,8 @@
                         </div>
                         <div class="col col-2 px-0">
                             <button type="button" class="btn btn-light btn-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ri" width="16" height="16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18.5V5a3 3 0 0 1 3-3h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 18.5zM19 20v-3H6.5a1.5 1.5 0 0 0 0 3H19zM5 15.337A3.486 3.486 0 0 1 6.5 15H19V4H6a1 1 0 0 0-1 1v10.337z"></path></svg>
-                                <span class="d-inline">Documentaiton</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ri mr-1" width="16" height="16" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#1A93FE" d="M3 18.5V5a3 3 0 0 1 3-3h14a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5A3.5 3.5 0 0 1 3 18.5zM19 20v-3H6.5a1.5 1.5 0 0 0 0 3H19zM5 15.337A3.486 3.486 0 0 1 6.5 15H19V4H6a1 1 0 0 0-1 1v10.337z"></path></svg>
+                                <span class="d-inline text-dark">Documentaiton</span>
                             </button>
                         </div>
                         <div class="col col-2">
@@ -499,7 +509,7 @@
                 <div class="row">
                     <div class="col col-4">
                         <img src="../image/odoo-white.svg" width="auto" height="24px" class="mb-3">
-                        <p class="text-white-50">Odoo attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.</p>
+                        <p class="text-white-50 small">Odoo attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.</p>
                         <div class="companyFlex d-flex">
                             <i class="bi bi-dribbble"></i>
                             <i class="bi bi-github"></i>
@@ -533,10 +543,11 @@
                 </div>
                 <hr class="bg-dark mb-3 w-50">
                 <div class="row my-4">
-                    <div class="col col-9 text-white-50"><b>© Odoo. </b>All rights reserved</div>
+                    <div class="col col-8 text-white-50"><b>© Odoo. </b>All rights reserved</div>
                     <div class="col col-1 text-white-50">Terms</div>
                     <div class="col col-1 text-white-50">Privacy</div>
                     <div class="col col-1 text-white-50">Cookies</div>
+                    <div class="col col-1"></div>
                 </div>
             </div> 
         </div>

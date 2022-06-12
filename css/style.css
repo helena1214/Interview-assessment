@@ -1,8 +1,26 @@
+/* Full element modification */
+body{
+    font-family: 'Mulish',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+p{
+    font-size: 14px;
+    color: grey;
+    font-weight: 600;
+}
+a{
+    cursor: pointer;
+}
+:is(h1,h2,h3,h4,h5){
+    font-weight: 700;
+}
+
+/*Background polygon*/
 .polygon{
     background-color: #038AFF;
     width: 100vw;
     height: 700px;
     position: absolute;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 .footerpolygon{
     background-color: #161348;
@@ -11,10 +29,8 @@
     height: max-content;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
-.footerItems div{
-    color: rgba(255,255,255,.5);
-}
 
+/*Hero image section*/
 .heroImage{
     border-radius: 10px 10px 50px 10px;
     width:100%;
@@ -24,16 +40,25 @@
     /* display: flex;
     flex-direction: column; */
 }
-
-#heroSection>:is(h1,p){
-    color: white;
+.heroImage .card-body *{
+    font-size: 80%;
 }
+.heroImage .card-body b{
+    font-size: 14px;
+}
+
 .companyFlex>img{
     height: 20px;
 }
+#addNew{
+    border-color: lightgrey;
+    color: black;
+    font-weight: 700;
+}
+
 .creditCard{
     border-radius: 10px 10px 10px 10px;
-    background-color: black;
+    background-color: #1A1146;
     width:100%;
     min-width: 338px;
     height:max-content;
@@ -44,14 +69,20 @@
     float: right;
 }
 .creditCardKey{
-    font-size: 6px;
+    font-size: 0.5rem;
+    font-weight: 300;
 }
 #creditCardNo{
-    font-size: 24px;
+    font-size: 22px;
 }
-#addNewBtn{
-    float: right;
+#viewAll{
+    font-weight: 500;
+    border-bottom:2px dotted #399BFE ;
+    width: fit-content;
+    cursor: pointer;
 }
+
+/*Tools section*/
 .toolsProject{
     grid-column: 1/3;
     grid-row: 2/4;
@@ -68,20 +99,6 @@
     z-index: 3;
 }
 
-
-.boarderBox{
-    border-radius: 10px 10px 10px 10px;
-    border: 1px solid #F4F3F8;
-    width: 400px;
-    height: 230px;
-    background-color: whitesmoke;
-    z-index: 1;
-
-} 
-
-#viewAll{
-    text-decoration-style: dashed;
-}
 .roundBtn{
     color: white;
     text-align: center;
@@ -89,6 +106,7 @@
     padding-bottom: 8px;
     font-size: 10px;
 }
+
 .technologyColumn .card{
     width: 100%;
 }
@@ -100,7 +118,7 @@
     font-size: 10px;
 }
 .technologyColumn h5{
-    font-size: 12px;
+    font-size: 14px;
 }
 .techUIcontainer{
     padding-left: 20%;
@@ -118,6 +136,8 @@
 
 }
 .techUItool{
+    border-top: 1px solid #F4F3F8;
+    padding-top: 0.75rem;
     width: 100%;
 }
 .starRank{
@@ -141,11 +161,14 @@
     width: fit-content;
     border-bottom:2px solid #399BFE ;
 }
+
+/*Install Section*/
 .downloadIcons{
     width: fit-content;
     font-size: 3px;
     height: fit-content;
     background-color: black;
+    cursor: pointer;
 }
 .downloadIcons i{
     width: auto;
@@ -156,6 +179,7 @@
     margin-top: -8px;
 }
 
+/*Solutions Section*/
 .solutions{
     background-color: #161348;
     border-bottom-left-radius: 50px;
@@ -164,11 +188,22 @@
 .solutions .btn{
     margin: 20% 0;
 }
+.learnMore{
+    width: fit-content;
+    color: #413F68;
+    font-weight: 500;
+    border-bottom:2px solid #413F68 ;
+}
+
+/*Awards Section*/
 #Awards{
     background-color: #FAFBFF;
 }
 #Awards p{
     font-size: 12px;
+}
+#Awards h5{
+    font-size: 13px;
 }
 #Awards .card{
     cursor: pointer;
@@ -176,23 +211,32 @@
 #Awards .card:hover{
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
 }
-.learnMore{
-    width: fit-content;
-    color: #413F68;
-    font-weight: 500;
-    border-bottom:2px solid #413F68 ;
-}
+
+/*Footer section*/
 .companyFlex>i{
     color:rgba(255,255,255,.5);
     margin-right:2rem ;
+}
+.footerItems div{
+    color: rgba(255,255,255,.5);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+}
+.curvedLine{
+    height: 120px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-width: 2px;
+    border-color: #DFE6F0;
 }
 
 
 /*Bootstrap style overwrite*/
 .navbar.navbar-expand-md{
     border-bottom: 1px solid #399BFE;
-    /* font-weight: 400;
-    color: white; */
 }
 .nav-link{
     color: white;
